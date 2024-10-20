@@ -1,0 +1,114 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #000205; /* Cor de fundo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.app-container {
+    background-color: #ffffff; /* Fundo do aplicativo */
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around; /* Distribui os itens uniformemente */
+}
+
+.navbar li {
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.navbar li:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+.navbar .active {
+    background-color: #0056b3;
+}
+
+.app-title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+    color: #333;
+}
+
+.symbol {
+    font-size: 30px; /* Tamanho do símbolo */
+}
+
+.form-container {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9; /* Fundo do formulário */
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+}
+
+textarea {
+    resize: none; /* Desabilita redimensionamento */
+}
+
+.btn-submit {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    font-size: 16px; /* Aumenta o tamanho da fonte */
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%; /* Botão ocupa toda a largura */
+}
+
+.btn-submit:hover {
+    background-color: #218838;
+    transform: scale(1.05);
+}
+
+#message {
+    margin-top: 15px;
+    text-align: center;
+    color: #28a745;
+    font-weight: bold;
+}
